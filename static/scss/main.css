@@ -1,0 +1,17 @@
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: black !important;
+}/*# sourceMappingURL=main.css.map */
