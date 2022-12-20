@@ -70,143 +70,64 @@ body{
     font-size: small;
 }
 
-#carouselExampleSlidesOnly img{
-    height: 600px;
-}
+.imageText {
+    position: relative;
+    margin: 0px -20px; /* Center it */
+  }
+  
+  .imageText .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+  }
 
-.cont{
-    font-size: 24px;
-    height: 44px;
-    background-color: red;
-    color: white;
-    justify-items: center;
-    display: block;
+  .imageText .content h1{
     text-align: center;
-}
+  }
 
-.cont a{
+  .listBerita{
+    margin: 60px 68px;
+  }
+
+  .listBerita a{
     text-decoration: none;
-    color:#FFD600;
-}
+  }
 
-#sliderInfo{
-    height: 450px;
-    padding: 0px 64px;
-}
-
-.sliderInfo a h1{
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 16px;
-}
-
-.sliderInfo a :hover{
-    color: blue;
-}
-
-.sliderInfo p{
-    font-size: 20px;
-    font-weight: 400px;
-}
-
-.txtSlider{
-    padding: 64px 0px;
-}
-
-.imgSlider{
-    padding: 45px 12px;
-}
-
-.itemCont{
-    text-align: justify;
-    padding: 0px 64px;
-}
-
-.itemCont p{
-    text-align: justify;
-}
-
-.itemCont a{
-    text-align: justify;
-    text-decoration: none;
-    color: black;
-}
-
-.titleContent{
-    padding: 16px 0px;
-}
-
-.titleContent h1{
-    text-align: center;
-    font-size: 48px;
-    font-weight: 600;
-}
-
-#contentBerita{
-    padding:24px 64px;
-}
-
-.contentBerita{
-    margin-bottom: 16px;
-}
-
-.imgContent{
-    margin-right: 32px;
-}
-
-.contentBerita h1{
+  .listBerita h1{
     font-size: 28px;
     font-weight: 600;
-}
+    text-align: justify;
+    text-decoration: none;
+  }
 
-.contentBerita h2{
+  .listBerita h2{
     font-size: 20px;
     font-weight: 400;
-}
-
-.contentBerita p{
-    font-size: 16px;
-    font-weight: 300px;
     text-align: justify;
-}
+  }
 
-.txtContentBerita{
-    margin: 10px 10px;
-}
+  .listBerita p{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+  }
 
-#contentWilayah{
-    padding:32px 44px;
-    text-align: center;
-}
+  .listBerita .column{
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
 
-.itemWilayah a{
-    font-size: 28px;
-    font-weight: 500;
-    text-decoration: none;
-    color: black;
-}
-
-#imgEvent{
-    max-height: 380px;
-}
-
-#contentLaporan{
-    padding:40px 64px;
-    text-align: center;
-}
-
-#contentLaporan a{
-    text-decoration: none;
-    color: black;
-}
-
-#contentLaporan a h1{
-    font-size: 36px;
-    font-weight: 500;
-}
+  .listBerita .col-sm-7{
+    margin-bottom: 16px;
+    padding-top: 10px;
+  }
 
 /* CSS FOOTER */
-
 #footer{
     background-color: #003D81;
     padding: 32px 64px;
@@ -263,9 +184,3 @@ hr.solid {
 .social{
     padding-right: 8px;
 }
-
-/* .carousel-control-prev,
-.carousel-control-next{
-    margin-top: 100px;
-    align-items: flex-end;; /* Aligns it at the bottom 
-} */
