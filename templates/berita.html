@@ -59,26 +59,26 @@
             <a class="nav-link" href="/berita"  id="navbar">Berita</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/aduanMasyarakat">Aduan Masyarakat</a>
+            <a class="nav-link" href="/aduanmasyarakat">Aduan Masyarakat</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Profil DKI Jakarta
             </a>
-            <ul class="dropdown-menu" id="dropdownProfil">
-              <li><a class="dropdown-item" href="/profilDKIJakarta">Sejarah Provinsi</a></li>
-              <li><a class="dropdown-item" href="/profilDKIJakarta">Visi & Misi</a></li>
-              <li><a class="dropdown-item" href="/profilDKIJakarta">Pimpinan</a></li>
-              <li><a class="dropdown-item" href="/profilDKIJakarta">Alamat Kantor</a></li>
-            </ul>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/profildki/sejarah">Sejarah Provinsi</a>
+              <a class="dropdown-item" href="/profildki/visimisi">Visi & Misi</a>
+              <a class="dropdown-item" href="/profildki/pimpinan">Pimpinan</a>
+              <a class="dropdown-item" href="/profildki/kantor">Alamat Kantor</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/informasiCOVID19">Informasi COVID-19</a>
+            <a class="nav-link" href="https://corona.jakarta.go.id/id" target="_blank">Informasi COVID-19</a>
           </li>
         </ul>    
     </nav>
  </div>
- <!-- NAVBAR -->
+   <!-- NAVBAR -->
 
 <div class="container-fluid imageText">
     <img src="{{ url_for('static', filename='image/beritaPage/imageTitleBerita.png')}}" alt="Berita">

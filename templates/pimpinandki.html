@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jakarta</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/pimpinandki.css')}}">
+  <link rel="icon" href="{{ url_for('static', filename='image/logopemprov.png')}}">
+</head>
+<body>
+<!-- SMALL NAV -->
+ <div class="flex-container container-fluid" id="smallNav">
+    <div class="left-flex">
+      <ul>
+        <li>
+          <img src="{{ url_for('static', filename='image/homePage/icon/mail-fill.png')}}" alt="Email Pemprov DKI Jakarta">
+          dkijakarta.go.id
+        </li>
+        <li>
+          <img src="{{ url_for('static', filename='image/homePage/icon/phone-fill.png')}}" alt="Telepon Pemprov DKI Jakarta">
+          (+6221) 382 2255
+        </li>
+      </ul>  
+    </div>
+    <div class="right-flex">
+      <ul>
+        <li>
+          <img src="{{ url_for('static', filename='image/homePage/icon/facebook-circle-fill.png')}}" alt="Facebook Pemprov DKI Jakarta">
+          <a href="https://www.facebook.com/DKIJakarta/" target="_blank">Pemprov DKI Jakarta</a> 
+        </li>
+        <li>
+          <img src="{{ url_for('static', filename='image/homePage/icon/ci_line-m.png')}}" alt="Divider">
+        </li>
+        <li>
+          <img src="{{ url_for('static', filename='image/homePage/icon/twitter-fill.png')}}" alt="Twitter Pemprov DKI Jakarta">
+          <a href="https://twitter.com/DKIJakarta" target="_blank">@dkijakarta</a>
+        </li>
+      </ul>  
+    </div>
+  </div>
+<!-- SMALL NAV -->
+
+<!-- NAVBAR -->
+  <div class="container" id="navv">
+    <nav class="navbar navbar-expand-lg bg-light" id="navbar">
+      <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='image/homePage/logoWeb.png')}}" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/berita"  id="navbar">Berita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aduanmasyarakat">Aduan Masyarakat</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profil DKI Jakarta
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/profildki/sejarah">Sejarah Provinsi</a>
+              <a class="dropdown-item" href="/profildki/visimisi">Visi & Misi</a>
+              <a class="dropdown-item" href="/profildki/pimpinan">Pimpinan</a>
+              <a class="dropdown-item" href="/profildki/kantor">Alamat Kantor</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://corona.jakarta.go.id/id" target="_blank">Informasi COVID-19</a>
+          </li>
+        </ul>    
+    </nav>
+ </div>
+<!-- NAVBAR -->  
+
+<!-- Sidebar -->
+<div class="container-fluid" id="contentProvinsi">
+    <div class="w3-sidebar3 w3-bar-block" style="width:25%;background-color: #3A689B;color: white;">
+        <h3 class="w3-bar-item">Profil Provinsi DKI Jakarta</h3>
+        <a href="/profildki/sejarah" class="w3-bar-item w3-button w3-hover-none w3-hover-text-cyan">Sejarah Provinsi DKI Jakarta</a>
+        <a href="/profildki/visimisi" class="w3-bar-item w3-button w3-hover-none w3-hover-text-cyan">Visi & Misi Provinsi DKI Jakarta</a>
+        <a href="/profildki/pimpinan" class="w3-bar-item w3-button w3-hover-none w3-hover-text-cyan">Pimpinan Provinsi DKI Jakarta</a>
+        <a href="/profildki/kantor" class="w3-bar-item w3-button w3-hover-none w3-hover-text-cyan">Alamat Kantor Pemerintah Provinsi</a>
+    </div>
+      
+      <!-- Page Content -->
+      <div style="margin-left:25%">
+        <div class="container containerPimpinan">
+            <h1>Pimpinan Provinsi DKI Jakarta 2017-2022</h1>
+            <p>Gubernur Jakarta merupakan seorang politisi terpilih yang memegang pemerintahan strategis Jakarta bersama dengan wakil gubernur dan para anggota Dewan Perwakilan Rakyat Daerah yang dipilih melalui pemilihan umum yang dilaksanakan 5 tahun sekali.</p>
+            <div class="container-fluid" id="Pimpinan">
+                <h2>Struktur Pimpinan Provinsi DKI Jakarta</h2>
+                <p>Periode 2017 - 2022</p>
+                <div class="row gubWagub">
+                    <div class="column pimpinanDKI">
+                        <h3><u>Gubernur</u></h3>
+                        <h2>Anies Rasyid Baswedan, Ph.D</h2>
+                        <img src="{{ url_for('static', filename='image/profilePage/pimpinan/gubernurdki.png')}}" alt="">
+                        <div class="container" style="margin: 16px 0px;">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gubernurModal">
+                              Lihat Profil
+                            </button>
+                          
+                            <!-- The Modal -->
+                            <div class="modal" id="gubernurModal">
+                              <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                
+                                  <!-- Modal Header -->
+                                  <div class="modal-header">
+                                    <h1 class="modal-title">Modal Heading</h1>
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                  </div>
+                                  
+                                  <!-- Modal body -->
+                                  <div class="modal-body">
+                                    <h3>Some text to enable scrolling..</h3>
+                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          
+                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div>                                 
+                                </div>
+                            
+                            </div>
+                          </div>
+                        </div>                    
+                    </div>
+                    
+                    <div class="column pimpinanDKI">
+                        <h3><u>Wakil Gubernur</u></h3>
+                        <h2>Ir. H. Ahmad Riza PAtria, M.B.A</h2>
+                        <img src="{{ url_for('static', filename='image/profilePage/pimpinan/wakilgubernurdki.png')}}" alt="">
+                        <div class="container" style="margin: 16px 0px;">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wakilGubernurModal">
+                              Lihat Profil
+                            </button>
+                          
+                            <!-- The Modal -->
+                            <div class="modal" id="wakilGubernurModal">
+                              <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                
+                                  <!-- Modal Header -->
+                                  <div class="modal-header">
+                                    <h1 class="modal-title">Modal Heading</h1>
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                  </div>
+                                  
+                                  <!-- Modal body -->
+                                  <div class="modal-body">
+                                    <h3>Some text to enable scrolling..</h3>
+                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          
+                                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div>                                 
+                                </div>
+                            
+                            </div>
+                          </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="row sekda">
+                    <h3><u>Sekretaris Daerah</u></h3>
+                    <h2>Marullah Matali, Lc., M.Ag</h2>
+                    <img src="{{ url_for('static', filename='image/profilePage/pimpinan/sekretarisdaerahdki.png')}}" alt="">
+                    <div class="container" style="margin: 16px 0px;">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gubernurModal">
+                          Lihat Profil
+                        </button>
+                      
+                        <!-- The Modal -->
+                        <div class="modal" id="gubernurModal">
+                          <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                            
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h1 class="modal-title">Modal Heading</h1>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                              </div>
+                              
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                <h3>Some text to enable scrolling..</h3>
+                                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      
+                                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              </div>                                 
+                            </div>
+                        
+                        </div>
+                      </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <!-- FOOTER -->
+      <div class="container-fluid" id="contentFooter">
+        <div class="topFoot">
+          <div class="row foot" id="footer">
+            <div class="col-sm-3 contentFt">
+              <img src="{{ url_for('static', filename='image/homePage/footer/LogoJakarta.png')}}" alt="Jakarta">
+            </div>
+            <div class="col-sm-3 contentFt">
+              <h1>KONTAK KAMI</h1>
+              <h2>JAKARTA.GO.ID</h2>
+              <p>Jl. Medan Merdeka Selatan 8-9 Jakarta Pusat, Jakarta, Indonesia
+                <br> Telp : (+6221) 382 2255
+                <br> Faks : (+6221) 382 2255
+                Surel : dki@jakarta.go.id</p>
+            </div>
+            <div class="col-sm-3 contentFt">
+              <h1>PORTAL LAINNYA</h1>
+              <a href="https://smartcity.jakarta.go.id" target="_blank"><p>Jakarta Smart City</p></a>
+              <a href="https://data.jakarta.go.id" target="_blank"><p>Jakarta Open Data</p></a>
+              <a href="https://www.beritajakarta.id" target="_blank"><p>Berita Jakarta</p></a>
+              <a href="https://ppid.jakarta.go.id" target="_blank"><p>PPID DKI Jakarta</p></a>
+              <a href="https://plus.jakarta.go.id" target="_blank"><p>Jakarta Plus</p></a>
+            </div>
+            <div class="col-sm-3 contentFt">
+              <h1>IKUTI KAMI</h1>
+              <div class="row">
+                <div class="column social">
+                  <img src="{{ url_for('static', filename='image/homePage/footer/twitter-fill.png')}}" alt="Twitter Pemprov DKI Jakarta">
+                </div>
+                <div class="column">
+                  <a href="https://twitter.com/DKIJakarta" target="_blank"><p>@dkijakarta</p></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column social">
+                  <img src="{{ url_for('static', filename='image/homePage/footer/facebook-circle-fill.png')}}" alt="Facebook Pemprov DKI Jakarta">
+                </div>
+                <div class="column">
+                  <a href="https://www.facebook.com/DKIJakarta/" target="_blank"><p>Pemprov DKI Jakarta</p></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column social">
+                  <img src="{{ url_for('static', filename='image/homePage/footer/mail-fill.png')}}" alt="Email Pemprov DKI Jakarta">
+                </div>
+                <div class="column">
+                  <p>dki@jakarta.go.id</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="bottomFoot">
+          <hr class="solid">
+          <h4>Copyright © 2022 Pemerintah Daerah Provinsi DKI Jakarta. All Right Reserved</h4> 
+        </div>
+       </div>
+       <!-- FOOTER -->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+/* CSS BODY */
 body{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -70,8 +71,18 @@ body{
     font-size: small;
 }
 
-#carouselExampleSlidesOnly img{
+.dropdown-menu{
+    background-color: #003D81;
+}
+
+.dropdown-menu a{
+    color: white;
+}
+
+/* CSS CONTENT */
+#homeImage img{
     height: 600px;
+    width: 100%;
 }
 
 .cont{

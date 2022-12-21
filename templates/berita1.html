@@ -11,8 +11,8 @@
     <link rel="icon" href="{{ url_for('static', filename='image/logopemprov.png')}}">
 </head>
 <body>
-<!-- SMALL NAV -->
-  <div class="flex-container container-fluid" id="smallNav">
+   <!-- SMALL NAV -->
+   <div class="flex-container container-fluid" id="smallNav">
     <div class="left-flex">
       <ul>
         <li>
@@ -59,41 +59,104 @@
             <a class="nav-link" href="/berita"  id="navbar">Berita</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/aduanMasyarakat">Aduan Masyarakat</a>
+            <a class="nav-link" href="/aduanmasyarakat">Aduan Masyarakat</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Profil DKI Jakarta
             </a>
-            <ul class="dropdown-menu" id="dropdownProfil">
-              <li><a class="dropdown-item" href="/profilDKIJakarta">Sejarah Provinsi</a></li>
-              <li><a class="dropdown-item" href="/profilDKIJakarta">Visi & Misi</a></li>
-              <li><a class="dropdown-item" href="/profilDKIJakarta">Pimpinan</a></li>
-              <li><a class="dropdown-item" href="/profilDKIJakarta">Alamat Kantor</a></li>
-            </ul>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/profildki/sejarah">Sejarah Provinsi</a>
+              <a class="dropdown-item" href="/profildki/visimisi">Visi & Misi</a>
+              <a class="dropdown-item" href="/profildki/pimpinan">Pimpinan</a>
+              <a class="dropdown-item" href="/profildki/kantor">Alamat Kantor</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/informasiCOVID19">Informasi COVID-19</a>
+            <a class="nav-link" href="https://corona.jakarta.go.id/id" target="_blank">Informasi COVID-19</a>
           </li>
         </ul>    
     </nav>
  </div>
- <!-- NAVBAR -->
- <div class="container-fluid contentBerita">
-    <h1>Dinas Bina Marga Perbaiki Jalan Berlubang di Rasuna Said</h1>
-    <div class="row">
-        <div class="col-sm-6">
-            <p>Jumat, 21 Oktober 2022 19:13 WIB</p>
-        </div>
-        <div class="col-sm-3">
-            <p>Reporter: Aldi Geri Lumban Tobing</p>
-        </div>
-        <div class="col-sm-3">
-            <p>Editor: Andry</p>
-        </div>
+   <!-- NAVBAR -->
+
+ <div class="container-fluid" id="contentBerita">
+  <h1 class="text-left">Dinas Bina Marga Perbaiki Jalan Berlubang di Rasuna Said </h1>
+  <p class="text-primary">Jumat, 21 Oktober 2022 19:13 WIB  Reporter : Aldi Geri Lumban Tobing | Editor : Andry</p>
+  <img class="card-img-top" src="{{ url_for('static', filename='image/beritaPage/detailBerita/berita1.png')}}" alt="Card image cap">
+  <div class="bodyBerita">
+    <p class="text-muted">Foto: Istimewa - Beritajakarta.id</p>
+    <p class="card-text" style="text-align: justify">Dinas Bina Marga DKI Jakarta memperbaiki jalan berlubang pada dua sisi Jalan Rasuna Said, Jakarta Selatan sejak Rabu (19/10) hingga Kamis (20/10) malam. Hal ini dilakukan untuk mengembalikan kondisi jalan yang rusak akibat terdampak pembangunan LRT serta meminimalisir terjadinya kecelakaan bagi para pengguna jalan.
+
+      Kepala Dinas Bina Marga DKI Jakarta, Hari Nugroho mengatakan, pihaknya secara bergantian melakukan pengerjaan perbaikan jalan berlubang pada siang dan malam hari.
+       "Kamis malam tim kami sudah selesai mengerjakan modul hotmix di Jalan Rasuna Said. Semoga setelah ini para pengguna jalan bisa melintasi jalanan dengan lebih nyaman dan aman," ujarnya, Jumat (21/10). Hari menjelaskan, pengerjaan penutupan lubang jalan pada siang hari menggunakan bahan coldmix untuk meminimalisir terjadinya kecelakaan pengguna jalan.
+       
+      
+      Sementara, pada pekerjaan di malam hari, perbaikan jalan dilakukan menggunakan bahan hotmix dengan sistem modul dan ditujukan untuk kerusakan jalan yang lebih lebar dan lebih parah.
+       Perbaikan menggunakan modul hotmix ini ukuran lebarnya telah sesuai dengan lebar lajur jalan. Sehingga, setelah jalan tersebut diperbaiki, tidak akan membahayakan pengguna jalan yang melintas karena elevasi atau ketinggian jalan masih sama dengan sekitarnya.
+       "Kami masih akan terus menyisir jalanan yang perlu diperbaiki dan dilakukan pemeliharaan. Bagi masyarakat yang ingin menyampaikan informasi jalanan rusak dapat mengadukan melalui kanal CRM maupun posko pengaduan langsung di Balai Kota," tandas Hari.</p>
     </div>
-    <img src="{{ url_for('static', filename='image/beritaPage/detailBerita/berita1.png')}}" alt="">
-    <p class="text-muted"> (Foto: Reza Hapiz - Beritajakarta.id)</p>
+  </div>
+
+  <!-- FOOTER -->
+<div class="container-fluid" id="contentFooter">
+  <div class="topFoot">
+    <div class="row foot" id="footer">
+      <div class="col-sm-3 contentFt">
+        <img src="{{ url_for('static', filename='image/homePage/footer/LogoJakarta.png')}}" alt="Jakarta">
+      </div>
+      <div class="col-sm-3 contentFt">
+        <h1>KONTAK KAMI</h1>
+        <h2>JAKARTA.GO.ID</h2>
+        <p>Jl. Medan Merdeka Selatan 8-9 Jakarta Pusat, Jakarta, Indonesia
+          <br> Telp : (+6221) 382 2255
+          <br> Faks : (+6221) 382 2255
+          Surel : dki@jakarta.go.id</p>
+      </div>
+      <div class="col-sm-3 contentFt">
+        <h1>PORTAL LAINNYA</h1>
+        <a href="https://smartcity.jakarta.go.id" target="_blank"><p>Jakarta Smart City</p></a>
+        <a href="https://data.jakarta.go.id" target="_blank"><p>Jakarta Open Data</p></a>
+        <a href="https://www.beritajakarta.id" target="_blank"><p>Berita Jakarta</p></a>
+        <a href="https://ppid.jakarta.go.id" target="_blank"><p>PPID DKI Jakarta</p></a>
+        <a href="https://plus.jakarta.go.id" target="_blank"><p>Jakarta Plus</p></a>
+      </div>
+      <div class="col-sm-3 contentFt">
+        <h1>IKUTI KAMI</h1>
+        <div class="row">
+          <div class="column social">
+            <img src="{{ url_for('static', filename='image/homePage/footer/twitter-fill.png')}}" alt="Twitter Pemprov DKI Jakarta">
+          </div>
+          <div class="column">
+            <a href="https://twitter.com/DKIJakarta" target="_blank"><p>@dkijakarta</p></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column social">
+            <img src="{{ url_for('static', filename='image/homePage/footer/facebook-circle-fill.png')}}" alt="Facebook Pemprov DKI Jakarta">
+          </div>
+          <div class="column">
+            <a href="https://www.facebook.com/DKIJakarta/" target="_blank"><p>Pemprov DKI Jakarta</p></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column social">
+            <img src="{{ url_for('static', filename='image/homePage/footer/mail-fill.png')}}" alt="Email Pemprov DKI Jakarta">
+          </div>
+          <div class="column">
+            <p>dki@jakarta.go.id</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="bottomFoot">
+    <hr class="solid">
+    <h4>Copyright © 2022 Pemerintah Daerah Provinsi DKI Jakarta. All Right Reserved</h4> 
+  </div>
  </div>
+ <!-- FOOTER -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>

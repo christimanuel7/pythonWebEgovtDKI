@@ -68,6 +68,103 @@ body{
     font-size: small;
 }
 
-.contentBerita{
-    margin: 60px 100px;
+.dropdown-menu{
+    background-color: #003D81;
+}
+
+.dropdown-menu a{
+    color: white;
+}
+
+/* CSS CONTENT */
+
+#contentBerita{
+    padding: 60px 100px;
+}
+
+.bodyBerita{
+    padding-top: 20px;
+}
+
+.text-left{
+    font-size: 40px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.text-primary{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.text-muted{
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.card-text{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* CSS FOOTER */
+
+#footer{
+    background-color: #003D81;
+    padding: 32px 64px;
+}
+
+#footer h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+#footer h2{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+#footer p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+#footer a{
+   text-decoration: none;
+}
+
+#contentFooter{
+    background-color: #003D81;
+}
+
+.contentFt h1{
+    margin-bottom: 20px;
+}
+
+.social{
+    padding: 0px 16px;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+    margin-left:-50px;
+    margin-right:-50px;
+  }
+
+.bottomFoot h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.social{
+    padding-right: 8px;
 }
