@@ -132,6 +132,16 @@ body{
     border-radius: 20px;
 }
 
+.modal-lg{
+    border-radius: 20px;
+    height: 600px;
+    width: 800px;
+}
+
+.modal-header{
+    height: 48px;
+}
+
 .gubWagub{
     margin: 0px 24px;
     justify-content: center;
@@ -193,6 +203,177 @@ body{
     font-size: 20px;
     font-weight: 600;
     color: #003D81;
+}
+
+#gubernurModal img{
+    position: fixed;
+}
+
+#wakilGubernurModal img{
+    position: fixed;
+}
+
+#gubernurModal button{
+    position: fixed;
+    color: #003D81;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#gubernurModal p{
+    margin-left: -220px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.fotoPejabat{
+    margin-left: -240px;
+}
+
+.fotoPejabat2{
+    margin-left: -176px;
+}
+
+.fotoPejabat3{
+    margin-left: -180px;
+}
+
+.listPejabat{
+   margin-left: -220px;
+}
+
+.listPejabat li{
+    text-align: justify;
+ }
+ 
+ .listPejabat2 li{
+     text-align: justify;
+  }
+
+  .listPejabat3 li{
+    text-align: justify;
+    margin-left: -96px;
+ }
+
+
+.penghargaan{
+    text-align: left;
+ }
+
+ .penghargaan b{
+    text-align: left;
+    margin-left: -218px;
+ }
+
+ .penghargaan2 b{
+    text-align: left;
+    margin-left: -244px;
+ }
+
+ .karir{
+    text-align: left;
+ }
+
+ .karir b{
+    text-align: left;
+    margin-left: -218px;
+ }
+
+ .karir2 b{
+    text-align: left;
+    margin-left: -310px;
+ }
+
+ .karir3 b{
+    text-align: left;
+    margin-left: -508px;
+ }
+
+ .penghargaan3 b{
+    text-align: left;
+    margin-left: -440px;
+ }
+
+ .medSos{
+    text-align: left;
+ }
+
+ .medSos b{
+    text-align: left;
+    margin-left: -218px;
+ }
+
+ .medSos column p{
+    text-align: left;
+ }
+
+ .medSos br{
+    text-decoration: none;
+ }
+
+ .medSos a{
+    text-decoration: none;
+    color: #003D81;
+ }
+
+ .medSos2{
+    text-align: left;
+ }
+
+ .medSos2 b{
+    text-align: left;
+ }
+
+ .medSos2 column p{
+    text-align: left;
+ }
+
+ .medSos2 br{
+    text-decoration: none;
+ }
+
+ .medSos2 a{
+    text-decoration: none;
+    color: #003D81;
+ }
+
+ .medSos3{
+    text-align: left;
+    margin-left: -96px;
+ }
+
+ .medSos3 b{
+    text-align: left;
+ }
+
+ .medSos3 column p{
+    text-align: left;
+ }
+
+ .medSos3 br{
+    text-decoration: none;
+ }
+
+ .medSos3 a{
+    text-decoration: none;
+    color: #003D81;
+ }
+
+ #sekretarisDaerahModal h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #003D81;
+}
+
+#sekretarisDaerahModal img{
+    position: fixed;
+}
+
+
+#sekretarisDaerahModal p{
+    margin-left: -220px;
+    text-align: justify;
+    font-size: 16px;
 }
 
 

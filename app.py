@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 
-app = Flask(__name__)
+app=Flask(__name__)
 
 @app.route('/')
 def index():
@@ -28,7 +28,11 @@ def berita4():
 
 @app.route('/aduanmasyarakat')
 def aduanmasyarakat():
-    return render_template('aduanmasyarakat.html') 
+    return render_template('aduanmasyarakat.html')
+
+@app.route('/aduanmasyarakat/sukses')
+def aduanmasyarakatsuccess():
+    return render_template('aduanmasyarakatsuccess.html')      
 
 @app.route('/profildki/sejarah')
 def sejarahdki():

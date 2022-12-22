@@ -1,0 +1,178 @@
+body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+}
+
+/* CSS SMALL NAV */
+
+ #smallNav{
+    display: flex;
+    flex-direction: row;
+    padding: 16px 4px;
+    align-items: center;
+    height: 40px;
+    color: white;
+
+    background: #003D81;
+}
+
+#smallNav ul li{
+   display: inline-flex;
+   margin-top: 20px;
+   font-size: 18px;
+}
+
+.left-flex ul li img{
+    color: white;
+    margin-right: 10px;
+}
+
+.left-flex ul li{
+    justify-content: end;
+    text-decoration: none;
+    color: white;
+    margin-right: 64px;
+}
+
+.right-flex ul li img{
+    color: white;
+    margin-right: 10px;
+}
+
+.right-flex ul li a{
+    justify-content: end;
+    text-decoration: none;
+    color: white;
+    margin-right: 8px;
+}
+
+/* CSS NAVBAR*/
+
+#nav{
+    max-height: 100px;
+}
+
+#navv img{
+    width: 192px;
+    height: 48px;
+    margin-left: -108px;
+    margin-right: 24px;
+}
+
+.nav-link{
+    color: black;
+    font-weight: 600;
+    font-size: small;
+}
+
+.dropdown-menu{
+  background-color: #003D81;
+}
+
+.dropdown-menu a{
+  color: white;
+}
+
+/* CSS CONTENT */
+
+.imageText {
+    position: relative;
+    margin: 0px -20px; /* Center it */
+  }
+  
+  .imageText .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .imageText .content h1{
+    text-align: center;
+  }
+
+  .contentAduan{
+    padding: 16px 32px;
+  }
+
+  .contentAduan h1{
+   text-align: center;
+  }
+
+  .formAduan{
+    margin: 32px 16px;
+    padding: 32px 16px;
+    border: solid black 1px;
+  }
+
+  .form-group.required .control-label:after { 
+    content:"*";
+    color:red;
+ }
+  
+/* CSS FOOTER */
+#footer{
+    background-color: #003D81;
+    padding: 32px 64px;
+}
+
+#footer h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+#footer h2{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+#footer p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+#footer a{
+   text-decoration: none;
+}
+
+#contentFooter{
+    background-color: #003D81;
+}
+
+.contentFt h1{
+    margin-bottom: 20px;
+}
+
+.social{
+    padding: 0px 16px;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+    margin-left:-50px;
+    margin-right:-50px;
+  }
+
+.bottomFoot h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.social{
+    padding-right: 8px;
+}
